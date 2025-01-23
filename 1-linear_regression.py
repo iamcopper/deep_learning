@@ -2,16 +2,16 @@
 #
 # 吴超《人工智能导论》：机器学学习经典模型（一）
 # 
-# 线性回归模型的演示
+# 线型模型：线性回归模型的演示
 # 例子：使用线性回归模型来根据房子与市中心的距离来预测房价
 # 1. 使用sklearn库来创建线性回归模型；
 # 2. 使用梯度下降算法来训练模型；
 
-# import matplotlib.pyplot as plt
-from matplotlib import pyplot as plt
 import numpy as np
 # 导入sklearn，选择线型回归模型
 from sklearn.linear_model import LinearRegression
+from matplotlib import pyplot as plt
+# import matplotlib.pyplot as plt
 
 # 准备数据
 # 房子与市中心的距离

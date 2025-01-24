@@ -2,7 +2,7 @@
 
 # 过拟合演示1：用身高X，预测寿命y
 # 线性模型：y = ax + b
-#   从结果可以看出，线性模型拟合效果比较差，对训练数据的准确率仅为6%。
+#   从结果可以看出，线性模型拟合效果比较差，对训练数据的准确率仅为0.061。
 import numpy as np
 from sklearn.linear_model import LinearRegression
 

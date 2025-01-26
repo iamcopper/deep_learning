@@ -41,11 +41,23 @@ def sigmoid(x):
 def tanh(x):
     """
     tanh函数
-    :param x: np.array 格式数据
+    :param x: np.array格式数据
     :return: tanh函数
     """
     return ((np.exp(x) - np.exp(-x)) / (np.exp(x) + np.exp(-x)))
 
+def relu(x):
+    """
+    relu函数
+    :param x: np.array格式数据
+    :return: relu函数
+    """
+    
+    temp = np.zeros_like(x)
+    if_bigger_zero = (x > temp)
+    return x * if_bigger_zero
+
 # 绘制函数图像
 #plot_activation_function(sigmoid)
-plot_activation_function(tanh)
+#plot_activation_function(tanh)
+plot_activation_function(relu)

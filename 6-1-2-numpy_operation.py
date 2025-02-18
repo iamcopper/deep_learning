@@ -53,8 +53,20 @@ d = a.T
 print("d: \n%s" % (d))
 print("d.shape = ", d.shape)
 
-print("\n>>>>>> 矩阵元素类型修改: array.astype()")
+print("\n>>>>>> 矩阵元素数据类型修改: array.astype()")
 arr1 = np.array([[[1, 2, 3], [4, 5, 6]], [[12, 3, 34], [5, 6, 7]]])
 arr2 = arr1.astype(np.float32)
 print("arr1.dtype = %s" % (arr1.dtype))
 print("arr2.dtype = %s" % (arr2.dtype))
+
+print("\n>>>>>> 数组元素去重：np.unique()")
+arr1 = np.array([[1, 2, 3, 4], [3, 4, 5, 6]])
+arr2 = np.unique(arr1)
+print("arr1: \n%s" % (arr1))
+print("arr2: \n%s" % (arr2))
+
+print("\n>>>>>> 数组运算：")
+a = np.array([1, 2])
+print("a * 3 = %s" % (a * 3))
+b = np.array([3, 4])
+print("a * b = %s" % (a * b))

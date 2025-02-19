@@ -70,3 +70,5 @@ a = np.array([1, 2])
 print("a * 3 = %s" % (a * 3))
 b = np.array([3, 4])
 print("a * b = %s" % (a * b))
+
+print(a.sum(axis=None))
